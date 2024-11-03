@@ -1,27 +1,22 @@
 def tax_decorator(func):
-    def wrapper(*args, **kwargs):
-        base = func(*args, **kwargs)
-        taxable_amount = args[0]
-        if taxable_amount <= 120_000:
-            # I próg: 12% minus 3600 zł
-            tax = base - 3600
+    def wrapper(taxable_amount, rate):
+        tax_threshold = 120_000  # granica progu podatkowego
+        # wyciągnięcie do zmiennej podstawowego liczenia podatku
+        base_tax = func(taxable_amount, rate)
+
+        if taxable_amount <= tax_threshold:
+            tax = base_tax - 3600
         else:
-            # II próg: 32% dla nadwyżki ponad 120,000 PLN + 10,800 zł
-            excess = taxable_amount - 120_000  # Kwota powyżej progu
-            tax = (120_000 * 12 / 100) + (excess * 32 / 100) + 10_800
+            excess = taxable_amount - tax_threshold
+            tax_first_bracket = func(tax_threshold, rate=12)
+            tax_second_bracket = func(excess, rate)
+            tax = (tax_second_bracket + 10_800) + (tax_first_bracket - 3600)
         return tax
     return wrapper
 
-
-# użycie adnotacji @tax_decorator - pozwala na szybsze użycie dekoratora, nie trzeba jej dodatkowo używać
 @tax_decorator
 def tax(taxable_amount, rate=20):
-    return taxable_amount * rate / 100  # Bazowa funkcja, której nie zmieniamy
+    return taxable_amount * rate / 100
 
-
-# rate -> % opodatkowania
-# func = tax_decorator(tax)
-
-# Przykładowe wywołania
-print(tax(110_000, 12))  # Kwota poniżej progu, powinien naliczyć I próg  -> 8_400
-print(tax(150_000, 32))  # Kwota powyżej progu, powinien naliczyć II próg -> 34_800
+print(tax(110_000, 12))
+print(tax(150_000, 32))
