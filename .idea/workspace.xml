@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f70a81a7-ef0e-496c-854e-a1700c766289" name="Changes" comment="tax exercise and decorator, wrapper" />
+    <list default="true" id="f70a81a7-ef0e-496c-854e-a1700c766289" name="Changes" comment="correct tax">
+      <change afterPath="$PROJECT_DIR$/operatory_logiczne.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,20 +46,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.actions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.lottery.executor&quot;: &quot;Run&quot;,
-    &quot;Python.lottery2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tax.executor&quot;: &quot;Run&quot;,
-    &quot;Python.wrapper_and_decorator.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.actions.executor": "Run",
+    "Python.lottery.executor": "Run",
+    "Python.lottery2.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.operatory_logiczne.executor": "Run",
+    "Python.tax.executor": "Run",
+    "Python.wrapper_and_decorator.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
-  <component name="RunManager" selected="Python.tax">
+}]]></component>
+  <component name="RunManager" selected="Python.operatory_logiczne">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="lottery" />
       <option name="ENV_FILES" value="" />
@@ -71,6 +75,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="operatory_logiczne" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lottery" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/operatory_logiczne.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,6 +151,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.operatory_logiczne" />
         <item itemvalue="Python.tax" />
         <item itemvalue="Python.wrapper_and_decorator" />
       </list>
@@ -170,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730479903194</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="correct tax">
+      <option name="closed" value="true" />
+      <created>1730657182881</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730657182881</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +223,7 @@
     <MESSAGE value="initial version" />
     <MESSAGE value="lottery" />
     <MESSAGE value="tax exercise and decorator, wrapper" />
-    <option name="LAST_COMMIT_MESSAGE" value="tax exercise and decorator, wrapper" />
+    <MESSAGE value="correct tax" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct tax" />
   </component>
 </project>
