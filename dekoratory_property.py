@@ -20,9 +20,8 @@ class FuelTank:
             print(f"Poziom paliwa musi być między 0 a {self.__capacity}")
 
     def fill_up(self, __amount_fuel: float) -> None:
-        self.__current_level += __amount_fuel
-        if self.__current_level > self.__capacity:
-            self.__current_level = self.__capacity
+        if __amount_fuel <= self.__capacity:
+            self.__current_level += __amount_fuel
         else:
             print(f"Poziom paliwa musi być między 0 a {self.__capacity}")
 
