@@ -60,7 +60,7 @@ print("Index: ", lista.index("g"))
 lista.remove("g")
 print(lista)
 
-#w przypadku list w 0ktorych mamy wartości liczbowe, mozemy zwracać najmniejszy i największy element
+#w przypadku list w ktorych mamy wartości liczbowe, mozemy zwracać najmniejszy i największy element
 lista2 = [1, 2, 3, 66, 4, 5, -1,]
 print("Min: ", min(lista2))
 print("Min: ", max(lista2))
