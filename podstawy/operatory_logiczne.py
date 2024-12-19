@@ -92,8 +92,7 @@ if not age > 12 or money >= 30:
 
 if True or False and False:
     print("Prawda")
-else:
-    print("Fałsz")
+
 #operatory logiczne mają swoją wagę (priorytet) i mają również swoje konretną kolejność wykonywania
 #not (najwyższy priorytet)
 #and (średni priorytet)

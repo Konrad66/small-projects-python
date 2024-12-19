@@ -8,7 +8,7 @@
 #lista = [1, 2, "c", "d", ]
 
 
-
+#pierwsza wartość listy zaczyna się od zera
 lista = [1, 2, "c", "d", ]
 print(lista[3])
 print(lista)
