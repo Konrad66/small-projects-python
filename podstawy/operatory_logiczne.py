@@ -45,9 +45,9 @@ elif a < b:
 else:
     print("Równe")
 
-age = 19
-money = 55
 
+age = 10
+money = 55
 if age >= 13:
     print("Możesz wejść do kina.")
     if money >= 35:
