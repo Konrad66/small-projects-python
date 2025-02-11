@@ -34,12 +34,12 @@ print(slownik[8])
 #i tutaj słownika możemy użyć w ciekawy sposób, i odnieść się do elementu ktory nie istnieje
 # i jeżeli nie znajdzie w słowniku klucza o podanek wartości wyświetli komunikat,
 # który mu zadeklarujemy, możemy podać opcjonalny parametr, który zostanie wyświetlony jak nie znajdzie wartości
-print(slownik.get8, "inny dzień")
+print(slownik.get(8, "inny dzień"))
 
 
 #teraz wyświetlmy sobie nasz słownik element po elemencie w nowej lini:
 print("\n Pętla: ")
-for i in slownik:
+for i in slownik.v:
 	print(i)
 
 #Domyślnie pętla for iteruje po wartościach kluczy w słowniku, aby to zmienić możemy odwołać się bezpośrednio do wartości jakie chcemy wyświetlić

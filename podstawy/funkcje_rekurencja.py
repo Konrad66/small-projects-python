@@ -27,5 +27,4 @@ def silnia(x):
     else:
         return x * silnia(x - 1)
 
-
 print(silnia(5))
